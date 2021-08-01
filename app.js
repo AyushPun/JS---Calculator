@@ -38,3 +38,8 @@ a.addEventListener("click", add);
 s.addEventListener("click", sub);
 m.addEventListener("click", multiply);
 d.addEventListener("click", divide);
+clear.addEventListener('click', () => {
+      input1.value = "";
+      input2.value = "";
+      output.value = "";
+})

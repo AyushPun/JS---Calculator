@@ -9,11 +9,13 @@ h1 {
 }
 
 .container {
-  display: flex;
-  margin-top: 100px;
-  height: 400px;
-  border: 3px solid rgba(0, 0, 0, 0.247);
+  margin: auto;
+  margin-top: 5%;
+  height: 500px;
+  width: 30%;
+  border: 3px solid rgba(0, 0, 0, 0.308);
   border-radius: 50px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgba(128, 128, 128, 0.267);

@@ -5,31 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="app.css" />
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Calculator</title>
   </head>
   <body>
-    <h1>Calculator</h1>
     <div class="container">
-      <div>
-        <label for="input1"> First Input: </label>
-        <input type="text" id="input1" placeholder="Enter 1st Number" />
-        <br /><br />
-        <label for="input2">Second Input: </label>
-        <input type="text" id="input2" placeholder="Enter 2nd Number" />
+      <h1 class="display-3">Basic Calculator</h1>
+      <div class="input-group input-group-lg">
+        <input
+          type="number"
+          id="input1"
+          placeholder="FIRST INPUT"
+          class="form-control form-control-lg"
+        />
+        <input
+          type="number"
+          id="input2"
+          placeholder="SECOND INPUT"
+          class="form-control form-control-lg"
+        />
       </div>
-      <br><br>
-      <div>
-        <button id="add">Addition +</button>
-        <button id="sub">Subtraction -</button>
-        <button id="multiply">Multiply *</button>
-        <button id="divide">Division /</button>
+      <br />
+      <div class="btns">
+        <button id="add" class="btn btn-lg btn-dark">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-plus-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+            />
+          </svg>
+          Addition
+        </button>
+        <button id="sub" class="btn btn-lg btn-dark">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-dash-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7z"
+            />
+          </svg>
+          Subtraction
+        </button>
+        <button id="multiply" class="btn btn-lg btn-dark">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-x-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"
+            />
+          </svg>
+          Multiplication
+        </button>
+        <button id="divide" class="btn btn-lg btn-dark">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-slash-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.646-2.646a.5.5 0 0 0-.708-.708l-6 6a.5.5 0 0 0 .708.708l6-6z"
+            />
+          </svg>
+          Division
+        </button>
+        <button id="divide" class="btn btn-lg btn-dark">
+          
+          Clear
+        </button>
       </div>
-      <br><br>
-      <div>
-          <label for="output">Output: </label>
-          <input type="text" id="output">
+      <br /><br />
+
+      <div class="result">
+        <input
+          type="text"
+          id="output"
+          class="form-control form-control-lg"
+          placeholder="OUTPUT"
+        />
       </div>
     </div>
+
     <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -13,26 +13,26 @@
     />
     <title>Calculator</title>
   </head>
-  <body>
-    <div class="container">
-      <h1 class="display-3">Basic Calculator</h1>
+  <body id="bdy">
+    <div class="main">
+      <h1 id="heading" class="display-3">Calculator</h1>
       <div class="input-group input-group-lg">
         <input
           type="number"
           id="input1"
           placeholder="FIRST NUMBER"
-          class="form-control form-control-lg"
+          class="form-control"
         />
         <input
           type="number"
           id="input2"
           placeholder="SECOND NUMBER"
-          class="form-control form-control-lg"
+          class="form-control"
         />
       </div>
       <br />
       <div class="btns">
-        <button id="add" class="btn btn-lg btn-dark">
+        <button id="add" class="btn btn-dark">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -47,7 +47,7 @@
           </svg>
           Addition
         </button>
-        <button id="sub" class="btn btn-lg btn-dark">
+        <button id="sub" class="btn btn-dark">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -62,7 +62,7 @@
           </svg>
           Subtraction
         </button>
-        <button id="multiply" class="btn btn-lg btn-dark">
+        <button id="multiply" class="btn btn-dark">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -77,7 +77,7 @@
           </svg>
           Multiplication
         </button>
-        <button id="divide" class="btn btn-lg btn-dark">
+        <button id="divide" class="btn btn-dark">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -92,7 +92,7 @@
           </svg>
           Division
         </button>
-        <button id="clear" class="btn btn-lg btn-dark">
+        <button id="clear" class="btn btn-dark">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -109,14 +109,14 @@
         </button>
       </div>
       <br /><br />
-
-      <div class="result">
+      <div class="result input-group">
         <input
           type="number"
           id="output"
           class="form-control form-control-lg"
           placeholder="OUTPUT"
         />
+        <span id="copy" class="btn btn-success"><b>Copy</b></span>
       </div>
     </div>
 
